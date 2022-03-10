@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="131.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PAYMENT">
+   <children>
+      <Label prefHeight="81.0" prefWidth="363.0" text="  PLEASE PROCEED WITH CASH PAYMENT ON THE COUNTER" />
+      <Hyperlink fx:id="link" onAction="#card_pay" prefHeight="42.0" prefWidth="365.0" text="               FOR PAYMENT THROUGH CARD CLICK HERE                    " />
+   </children>
+</VBox>

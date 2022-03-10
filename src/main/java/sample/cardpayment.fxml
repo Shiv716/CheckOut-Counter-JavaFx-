@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cardPayment">
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="383.0" text="FILL IN YOUR CARD DETAILS" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="217.0" prefWidth="381.0">
+         <children>
+            <Label layoutX="14.0" layoutY="71.0" prefHeight="25.0" prefWidth="40.0" text="CVV" />
+            <Label layoutX="139.0" layoutY="71.0" prefHeight="25.0" prefWidth="149.0" text="EXP DATE(dd/mm/yyyy)" />
+            <TextField fx:id="cvv" layoutX="54.0" layoutY="70.0" onAction="#cnum" prefHeight="27.0" prefWidth="53.0" />
+            <TextField fx:id="exp" layoutX="276.0" layoutY="70.0" onAction="#expnum" prefHeight="27.0" prefWidth="102.0" />
+            <Label layoutX="14.0" layoutY="117.0" prefHeight="23.0" prefWidth="132.0" text="ENTER CARD NUMBER" />
+            <TextField fx:id="cdnum" layoutX="146.0" layoutY="115.0" onAction="#cardnum" prefHeight="34.0" prefWidth="231.0" />
+            <Label layoutX="14.0" layoutY="159.0" prefHeight="17.0" prefWidth="134.0" text="NAME ON THE CARD:-" />
+            <TextField fx:id="name" layoutX="154.0" layoutY="154.0" onAction="#cdname" prefHeight="43.0" prefWidth="216.0" />
+            <Button fx:id="paybutton" layoutX="40.0" layoutY="217.0" mnemonicParsing="false" onAction="#payment" prefHeight="27.0" prefWidth="301.0" text="PROCEED WITH PAYMENT" />
+            <Label layoutX="12.0" layoutY="19.0" prefHeight="34.0" prefWidth="131.0" text="FOR CREDIT CARD:-" />
+               <Label fx:id="alert" layoutX="254.0" layoutY="21.0" prefHeight="31.0" prefWidth="106.0" textFill="#cd1818">
+                  <font>
+                     <Font name="System Bold Italic" size="13.0" />
+                  </font>
+               </Label>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
+   <Hyperlink fx:id="loyalcard" onAction="#loyalpay" prefHeight="25.0" prefWidth="413.0" text="                              ARE YOU A MEMBER ? CLICK HERE!                                " />
+</VBox>
