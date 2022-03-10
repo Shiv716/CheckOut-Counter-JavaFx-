@@ -185,6 +185,7 @@ public class Enigma {
 
          }
          //baba
+            //yaga
 
 
          // We store rotor 2 substitution:-
